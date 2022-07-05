@@ -1,1 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: hsl(228, 33%, 97%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Rubik';
+    padding-top: 3rem;
+}
+
+.comment-bars{
+    margin: 0 auto;
+}
+
+#comment {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.user-comment-box {
+    width: 730px;
+    height: 144px;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.user-comment-edit-box{
+    width: 642px;
+    height: 167px;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    float: right;
+}
+
+.comment-box{
+    width: 642px;
+    height: 167px;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.7rem;
+    margin-bottom: 1.5rem;
+    float: right;
+}
+
+.rating {
+    width: 40px;
+    height: 100px;
+    background-color: hsl(228, 33%, 97%);
+    border-radius: 10px;
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: hsl(238, 40%, 52%);
+    align-items: center;
+    padding-top: 00.5rem;
+    padding-bottom: 00.5rem;
+    margin-right: 1rem;
+}
+
+.user-name {
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(212, 24%, 26%);
+}
+
+.time {
+    color: hsl(211, 10%, 45%);
+}
+
+.content {
+    display: flex;
+    width: 618px;
+    height: 119px;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px hidden red;
+}
+
+
+.rep1 {
+    width: 243px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.rep2 {
+    width: 66px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #5357B6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reply1 {
+    width: 537px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reply-text{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Rubik';
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(238, 40%, 52%);
+
+}
+
+.rep2:hover{
+    cursor: pointer;
+}
+
+.rep2:hover svg path{
+    fill: hsl(239, 57%, 85%);
+}
+
+.rep2:hover .reply-text{
+    color:hsl(239, 57%, 85%);
+    cursor: pointer;
+}
+
+.rating:hover{
+    cursor: pointer;
+}
+
+
+.textbod1 {
+    width: 537px;
+    height: 72px;
+    color: hsl(211, 10%, 45%);
+    font-size: 16px;
+}
+
+#comment{
+    border: 1.5px solid hsl(223, 19%, 93%);
+    border-radius: 1rem;
+    padding: 1rem;
+    resize: none;
+}
+
+#comment:focus {
+    border:1.5px solid hsl(238, 40%, 52%);
+}
+
+#comment::placeholder{
+    font-family: 'Rubik';
+    font-size: 1rem;
+}
+
+#comment:hover{
+    cursor: pointer;
+}
+
+#send{
+    width: 104px;
+    height:48px;
+    border:hidden;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    background-color: hsl(238, 40%, 52%);
+    font-family: 'Rubik';
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#send:hover{
+    background-color: hsl(239, 57%, 85%);
+    cursor: pointer;
+}
+
+.user-image{
+    cursor: pointer;
+}
